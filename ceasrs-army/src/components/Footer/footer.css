@@ -1,0 +1,35 @@
+.footer-wrapper {
+    width: 100%;
+    height: 70px;
+    max-height: 70px;
+    visibility: visible;
+    margin-top: 10px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: #140093;
+    opacity: .73;
+    color: white;
+}
+
+.footer-content {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content a:hover {
+    background-color: #ddd;
+    color: black;
+ }
+ .footer-content a {
+     text-decoration: none;
+     color: white;
+ }
+
+.footer-content a.active {
+    background-color: #04AA6D;
+    color: white;
+  }

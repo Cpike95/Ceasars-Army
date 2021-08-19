@@ -1,0 +1,29 @@
+.about-wrapper {
+    /* background-color: #870202; */
+	width: 100%;
+	row-gap: 1rem;
+	z-index: var(--z-back);
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    height: 45vh;
+}
+
+.about-content {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    height: 44vh;
+    background-color: white;
+    opacity: .75;
+}
+
+/* .about-card {
+
+}
+
+.about-img {
+
+} */

@@ -1,0 +1,21 @@
+.product-wrapper {
+    background-color: #44b325;
+	width: 100%;
+	row-gap: 1rem;
+	z-index: var(--z-back);
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    height: 55vh;
+}
+
+.product-content {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    height: 54vh;
+    background-color: white;
+    opacity: .75;
+}

@@ -2,11 +2,14 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: darkgray;
+  background-color: rgb(114, 114, 114);
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
+  font-style: normal;
+  font-family: Merriweather;
+  font-weight: 500;
 }
 
 .App-logo {

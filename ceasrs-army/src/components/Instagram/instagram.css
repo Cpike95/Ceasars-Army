@@ -1,0 +1,18 @@
+.instagram-wrapper {
+	row-gap: 1rem;
+	z-index: var(--z-back);
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    height: 65vh;
+    width: 100%;
+}
+
+.instagram-content {
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    height: 64vh;
+    opacity: .75;
+}

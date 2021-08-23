@@ -1,19 +1,29 @@
 .contact-wrapper {
-    background-color: #020687;
-	width: 100%;
 	row-gap: 1rem;
 	z-index: var(--z-back);
 	padding-top: 3rem;
 	padding-bottom: 2rem;
     margin-right: auto;
     margin-left: auto;
-    height: 55vh;
+    height: 65vh;
+    width: 100%;
 }
 
 .contact-content {
     background-color: white;
     margin-right: auto;
     margin-left: auto;
-    height: 54vh;
+    height: 64vh;
     opacity: .75;
+    padding: 25px
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-name {
+
 }

@@ -1,0 +1,36 @@
+{
+	"name": "personalwebsite",
+	"version": "1.0.0",
+	"description": "CeasarsArmy",
+	"main": "server.js",
+	"scripts": {
+		"start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev ",
+		"start:prod": "node server.js",
+		"start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+		"client": "cd ceasrs-army && npm run start",
+		"seed": "node scripts/userDB.js",
+		"install": "cd client && npm install",
+		"build": "cd client && npm run build",
+		"heroku-postbuild": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Cpike95/Ceasars-Army"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Cpike95/Ceasars-Army/issues"
+	},
+	"homepage": "https://github.com/Cpike95/Ceasars-Army#readme",
+	"dependencies": {
+		"@sendgrid/mail": "^7.2.5",
+		"body-parser": "^1.19.0",
+		"concurrently": "^6.2.1",
+		"dot-env": "^0.0.1",
+		"express": "^4.17.1",
+		"express-session": "^1.17.2",
+		"if-env": "^1.0.4",
+		"prettier": "^2.3.2"
+	}
+}

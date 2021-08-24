@@ -1,14 +1,11 @@
-import express from 'express';
-// import {express-session} from 'express-session';
-import mongoose from 'mongoose'
-
-// const path = require('path');
+const express = require('express');
+const path = require('path');
 // const routes = require('./routes');
 // const passport = require('./config/passport');
 // const logger = require('morgan');
-// const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 // const config = require('./config/extra-config');
-// const session = require('express-session');
+const session = require('express-session');
 // const mongoose = require('mongoose');
 
 const app = express();
@@ -29,30 +26,30 @@ app.use(function (req, res, next) {
 });
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));	
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/build'));
 }
 
-const authCheck = require('./config/middleware/authenticationStatus.js');
+// const authCheck = require('./config/middleware/authenticationStatus.js');
 
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
-app.use(session({ secret: config.sessionKey, resave: true, saveUninitialized: true }));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(authCheck);
+// app.use(session({ secret: config.sessionKey, resave: true, saveUninitialized: true }));
+// app.use(passport.initialize());
+// app.use(passport.session());
+// app.use(authCheck);
 
 // Define API routes here
 
 app.use(cors());
 
-app.use(routes);
+// app.use(routes);
 
 // mongoose.connect(process.env.MONGODB_URI || MONGODB_URI || 'mongodb://localhost/GerrasDetailingUser', () => {
 //     console.log('Successful Connect to DB');
